@@ -1,14 +1,14 @@
-// Programa de simulación de Tiro parabólico
-// Por: Antonio Noguerón
+// Programa de simulación de Tiro parabólico / Parabolic shot simulation
+// By: Antonio Noguerón
 
 
 Objeto proyectil;
-float masa = 1; //Masa en Kilogramos
-float radio = 0.15; //Radio en metros
-PVector gravedad = new PVector(0, 9.81); //Metros / segundo²
-float velocidad_inicial = 13; //Metros / segundo
-float angulo = 69; //Ángulo en grados
-boolean arrastreB = true; //Hay fuerza de arrastre?
+float masa = 1; //Masa en Kilogramos / Mass in kilograms
+float radio = 0.15; //Radio en metros / radius in metres
+PVector gravedad = new PVector(0, 9.81); //Metros / segundo² /Gravity in m/s²
+float velocidad_inicial = 13; //Metros / segundo / metres/seconds
+float angulo = 69; //Ángulo en grados /angle in degrees
+boolean arrastreB = true; //Hay fuerza de arrastre? /Is there drag force or air resistance?
 
 PVector velocidad;
 boolean shot = false;
