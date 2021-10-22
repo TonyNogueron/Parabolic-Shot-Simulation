@@ -3,12 +3,12 @@
 
 
 Objeto proyectil, proyectil1;
-float masa = 1; //                            Masa en Kilogramos       | Mass in kilograms
-float radio = 0.15; //                        Radio en metros          | radius in metres
+float masa = 6; //                            Masa en Kilogramos       | Mass in kilograms
+float radio = 0.15; //                         Radio en metros          | radius in metres
 PVector gravedad = new PVector(0, 9.81); //   Metros / segundo²        | Gravity in m/s²
-float velocidad_inicial = 15; //              Metros / segundo         | metres/seconds
-float angulo = 55; //                         Ángulo en grados         | angle in degrees
-float c = 0.47; //                            Coeficiente de arrastre  | drag coefficient  0.47 is the coefficient for a sphere
+float velocidad_inicial = 14; //              Metros / segundo         | metres/seconds
+float angulo = 42; //                         Ángulo en grados         | angle in degrees
+float c = 0.47; //                             Coeficiente de arrastre  | drag coefficient  0.47 is the coefficient for a sphere
 boolean arrastreB = false; //                 Hay fuerza de arrastre?  | Is there drag force or air resistance?
 
 PVector velocidad;
@@ -58,7 +58,7 @@ void draw() {
     proyectil1.applyVelocity(velocidad);
     shot1 = true;
   }
-  if (shot1 == true && proyectil1.position.x > 52 && proyectil1.position.y >= height - 101) {
+  if (shot1 == true && proyectil1.position.x > 52 && proyectil1.position.y >= height - 103) {
     calculate1 = false;
   }
   if (mousePressed && shot == false) {

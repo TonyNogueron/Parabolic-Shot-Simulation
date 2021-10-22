@@ -20,7 +20,6 @@ class Objeto {
     acceleration.add(force);
   }
   void applyVelocity(PVector v){
-    PVector velocidad = PVector.div(v,masa); 
     velocity.add(velocidad);
   }
 
