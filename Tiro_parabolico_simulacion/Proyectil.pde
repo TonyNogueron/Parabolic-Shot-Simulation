@@ -32,8 +32,6 @@ class Objeto {
     acceleration.mult(0);
   }
 
-
-
   void edges() {
 
     if (position.x > width) {
